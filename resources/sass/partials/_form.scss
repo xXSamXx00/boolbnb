@@ -1,0 +1,184 @@
+.background_form {
+    min-height: calc(100vh - 66px);
+    overflow: hidden;
+    padding-top: 50px;
+    background-image: url(../img/background_image.jpg);
+    background-position: center;
+    .card_title {
+        background-color: $white;
+        width: 400px;
+    }
+    .btn-orange {
+        background-color: $button;
+        border-radius: 20px;
+    }
+    .card_head {
+        color: $black;
+        border-bottom: none;
+        text-align: center;
+        font-size: 26px;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+    }
+    .form_log {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+    }
+    input:focus {
+        box-shadow: none;
+        border: 1px solid $border;
+    }
+    input {
+        border-radius: 50px;
+    }
+    .title_input {
+        width: 70%;
+        margin: auto;
+    }
+    .input_value {
+        width: 70%;
+        margin: auto;
+    }
+    .button_log {
+        border-radius: 50px;
+        border: none;
+        width: 80px;
+        height: 40px;
+        background-color: $button;
+        color: $white;
+        &:hover {
+            background-color: $buttonhover;
+        }
+    }
+    .button_link {
+        border-radius: 50px;
+        margin-top: 20px;
+        border: none;
+        width: 250px;
+        height: 40px;
+        background-color: $lightorange;
+        color: $white;
+        &:hover {
+            background-color: $buttonhover;
+        }
+    }
+
+    .link {
+        color: $darkazure;
+    }
+}
+
+.background_form_reg {
+    min-height: calc(100vh - 66px);
+    overflow: hidden;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-image: url(../img/background_image.jpg);
+    background-position: center;
+    .rule {
+        color: $red;
+    }
+    .symbol {
+        color: red;
+    }
+    .card_title {
+        background-color: $white;
+    }
+    .card_head {
+        color: $black;
+        border-bottom: none;
+        text-align: center;
+        font-size: 26px;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+    }
+    .form_log {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+    }
+    input:focus {
+        box-shadow: none;
+        border: 1px solid $border;
+    }
+    input {
+        border-radius: 50px;
+    }
+    .title_input {
+        width: 70%;
+        margin: auto;
+    }
+    .input_value {
+        width: 70%;
+        margin: auto;
+    }
+    .button_reg {
+        border-radius: 50px;
+        border: none;
+        width: 100px;
+        height: 40px;
+        background-color: $button;
+        color: $white;
+        &:hover {
+            background-color: $buttonhover;
+        }
+    }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .form {
+        .card_title {
+            width: 40%;
+            .card_padding {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .title_input {
+                width: 90%;
+                margin: auto;
+            }
+
+            .input_value {
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .form {
+        .card_title {
+            width: 60%;
+            .title_input {
+                width: 90%;
+                margin: auto;
+            }
+
+            .input_value {
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .form {
+        .card_title {
+            width: 100%;
+            .title_input {
+                width: 90%;
+                margin: auto;
+            }
+
+            .input_value {
+                width: 90%;
+                margin: auto;
+            }
+            .link {
+                font-size: 14px;
+            }
+        }
+    }
+}

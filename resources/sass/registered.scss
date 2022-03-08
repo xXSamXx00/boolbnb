@@ -1,0 +1,142 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "partials/variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+//Dashboard Menu
+@import "partials/menu_dashboard";
+
+//Navbar
+@import "partials/navbarregistered";
+
+@import "partials/common";
+
+@import "partials/sponsorcards";
+
+.checkcross {
+    label:before {
+        content: none;
+    }
+    .check {
+        border-radius: 50%;
+        width: 2.5em;
+        height: 2.5em;
+        position: absolute;
+        background: #8bc34a;
+        transition: 0.4s ease;
+        top: 3.5px;
+        left: 4.5px;
+        &:before {
+            content: "\f06e";
+            font-family: FontAwesome;
+            font-size: 24px;
+            left: 4px;
+            top: -1px;
+        }
+    }
+}
+
+#checkcross:checked + label {
+    .check {
+        left: 60px;
+        transform: rotate(360deg);
+        background: #c34a4a;
+        &:before {
+            content: "\f070";
+            font-family: FontAwesome;
+            font-size: 24px;
+            left: 4px;
+            top: -1px;
+        }
+        &:after {
+            width: 27px;
+            transform: rotate(45deg) translate(15px, 8px);
+        }
+    }
+}
+.toggle-wrapper {
+    * {
+        box-sizing: border-box;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+        }
+        input {
+            height: 43px;
+            left: 72px;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            width: 101px;
+        }
+    }
+}
+.toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    p {
+        margin: 0;
+    }
+}
+
+label.toggle-item {
+    width: 7em;
+    background: #2e394d;
+    height: 3em;
+    display: inline-block;
+    border-radius: 50px;
+    position: relative;
+    transition: all 0.3s ease;
+    transform-origin: 20% center;
+    cursor: pointer;
+    &:before {
+        display: block;
+        transition: all 0.2s ease;
+        width: 2.3em;
+        height: 2.3em;
+        top: 0.25em;
+        left: 0.25em;
+        border-radius: 2em;
+        border: 2px solid #88cf8f;
+        transition: 0.3s ease;
+    }
+}
+
+.novisibility,
+.visibility {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.btn_show {
+    background-color: $show;
+}
+.btn_pencil {
+    background-color: $pencil;
+}
+
+.static {
+    background-color: $static;
+}
+
+.dark_yellow {
+    background-color: $darkyellow;
+}
+
+.visibility {
+    color: $white;
+}
+
+.novisibility {
+    color: $red;
+}

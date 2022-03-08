@@ -1,0 +1,25 @@
+.adv {
+    background-color: $navbar;
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+//Responsive
+@media (max-width: 991px) {
+    .nav-item {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-item {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav-item {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,80 @@
+.tt-search-box {
+    width: 500px;
+}
+.btn_search {
+    background-color: $buttonhover;
+    font-family: "Inter";
+    &:hover {
+        background-color: $button;
+    }
+}
+.font_style {
+    font-family: "Inter";
+}
+.map {
+    height: 350px;
+}
+.search {
+    background-color: $darkazure;
+    border-radius: 0;
+    line-height: 30px;
+    width: 100px;
+    height: 43px;
+    font-size: 17px;
+    font-family: "Inter";
+    margin-top: 10px;
+}
+.bg_search {
+    background-color: $darkazure;
+}
+
+//Responsive
+@media (max-width: 992px) {
+    .tt-search-box {
+        width: 500px;
+    }
+    .card_adv {
+        width: 60%;
+        .thumb {
+            height: 150px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .resp {
+        .tt-search-box {
+            width: 300px;
+        }
+        .search {
+            font-size: 14px;
+            width: 90px;
+        }
+    }
+    .fields {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .resp {
+        .tt-search-box {
+            width: 300px;
+        }
+        .search {
+            font-size: 13px;
+            width: 90px;
+        }
+    }
+
+    .btn_search {
+        font-size: 12px;
+    }
+    .service_name {
+        font-size: 13px;
+    }
+
+    .card_adv {
+        width: 100%;
+    }
+}

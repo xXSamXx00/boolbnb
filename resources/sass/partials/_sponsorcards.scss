@@ -1,0 +1,38 @@
+.card_sponsor {
+    background-color: $sposor;
+    &:hover {
+        box-shadow: 5px 10px 15px $border;
+    }
+    .title_sponsor {
+        font-weight: bold;
+        color: $buttonhover;
+    }
+    .desc_sponsor {
+        font-weight: bold;
+        color: $menu;
+    }
+    .sponsor_name {
+        color: $darkazure;
+        font-weight: bold;
+    }
+    .btn-orange {
+        background-color: $buttonhover;
+    }
+}
+
+.form-pay {
+    background-color: $sposor;
+    border: 1px solid $border;
+}
+.button_pay {
+    border: none;
+    background-color: $buttonhover;
+    border-radius: 10px;
+    &:hover {
+        background-color: $teal;
+        transition: 0.2s;
+    }
+}
+.sponsor_id {
+    color: $darkazure;
+}

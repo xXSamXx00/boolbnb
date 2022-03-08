@@ -1,0 +1,84 @@
+.home {
+    min-height: 50px;
+    .link_adv {
+        text-decoration: none;
+        color: $darkazure;
+        padding: 0.2rem 1rem;
+        background-color: $input;
+        border: 1px solid $border;
+        font-weight: 600;
+        font-size: 13px;
+        font-family: "Inter";
+        border-radius: 50px;
+    }
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+    .email {
+        text-decoration: none;
+    }
+    .search_bar {
+        width: 300px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: $input;
+        border: 1px solid $border;
+        input:focus {
+            box-shadow: none;
+        }
+        .search {
+            border-radius: 50px;
+            border: none;
+            transition: none;
+        }
+        .search_icon {
+            color: $white;
+            background-color: $darkazure;
+            padding: 1rem 0.5rem;
+            border-radius: 100px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+    }
+    .login {
+        color: $white;
+        padding: 0.5rem 1rem;
+        background-color: $darkazure;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: none;
+        font-family: "Inter";
+    }
+    .register {
+        text-decoration: none;
+        color: $darkazure;
+        margin-left: 10px;
+        padding: 0.5rem 1rem;
+        background-color: $input;
+        border: 1px solid $border;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: "Inter";
+        border-radius: 50px;
+    }
+}
+
+//Responsive
+@media (max-width: 991px) {
+    .nav-item {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-item {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav-item {
+        margin-bottom: 1rem;
+    }
+}

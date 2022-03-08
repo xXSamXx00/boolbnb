@@ -1,0 +1,89 @@
+.card_promo {
+    border-radius: 20px;
+    min-height: 550px;
+    text-decoration: none;
+    font-family: "Inter";
+    color: $black;
+    &:hover {
+        color: $black;
+        box-shadow: 5px 10px 18px $border;
+    }
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+    .box {
+        p {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .thumb {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 200px;
+        position: relative;
+    }
+    .promo {
+        position: absolute;
+        background-color: $orange;
+        border-radius: 50px;
+        right: 5px;
+        top: 5px;
+        font-size: 12px;
+        padding: 0.5rem 0.8rem;
+        color: $white;
+        font-weight: bold;
+    }
+    .card_title {
+        font-weight: bold;
+        font-size: 15px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .service {
+        font-weight: bold;
+        font-size: 13px;
+    }
+    .label_card {
+        background-color: $lightazure;
+        border-radius: 15px;
+        .icon_name {
+            color: $darkazure;
+        }
+    }
+    .button_details {
+        background-color: $button;
+        border-radius: 50px;
+        font-weight: bold;
+    }
+}
+.ads {
+    min-height: 400px;
+}
+
+//Show Cards
+.place {
+    color: $menu;
+}
+.back_icon {
+    background-color: $icona;
+    .icon_show {
+        color: $buttonhover;
+    }
+    .text_service {
+        color: $button;
+    }
+}
+.service_text {
+    color: $darkazure;
+}
+.bg-icon {
+    background-color: $lightazure;
+}

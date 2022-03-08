@@ -1,0 +1,38 @@
+.site_footer {
+    background-color: $grey;
+    min-height: 350px;
+    .title_footer {
+        font-family: "Inter";
+        font-weight: bold;
+    }
+    .menu_footer {
+        padding-left: 0;
+        line-height: 2rem;
+        li {
+            list-style: none;
+            a {
+                font-family: "Inter";
+                text-decoration: none;
+                color: $menu;
+                &:hover {
+                    color: $darkazure;
+                }
+            }
+        }
+    }
+    .line {
+        width: 100%;
+        border-bottom: 1px solid $border;
+    }
+    .copyright {
+        font-family: "Inter";
+        color: $menu;
+        .social_icon {
+            cursor: pointer;
+            &:hover {
+                filter: invert(42%) sepia(42%) saturate(596%) hue-rotate(138deg)
+                    brightness(97%) contrast(88%);
+            }
+        }
+    }
+}
